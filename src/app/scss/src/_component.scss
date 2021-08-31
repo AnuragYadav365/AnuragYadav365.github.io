@@ -1,0 +1,263 @@
+.#{$px} {
+  &-text-small {
+    font-size: 13px;
+  }
+
+  &-border {
+    &-top {
+      border-top: 1px solid $global-border;
+    }
+
+    &-bottom {
+      border-bottom: 1px solid $global-border;
+    }
+  }
+
+  &-label{
+    text-transform: none;
+    font-weight: 700;
+  }
+
+  &-full-height {
+    transition: 0.3s;
+    min-height: 100vh;
+    /* Fallback for browsers that do not support Custom Properties */
+    min-height: calc(var(--vh, 1vh) * 100);
+    &-fixed{
+      height: 100vh;
+      /* Fallback for browsers that do not support Custom Properties */
+      height: calc(var(--vh, 1vh) * 100);
+    }
+  }
+
+  &-graphic-1 {
+    position: absolute;
+    top: -100px;
+    right: -60px;
+    display: block;
+    width: 220px;
+    height: 220px;
+    transform: rotate(-45deg);
+    background-image: -webkit-gradient(linear, left top, right top, from(#2336B6), to(rgba(31, 38, 103, 0.9)));
+    background-image: linear-gradient(90deg, #2336B6 0%, rgba(31, 38, 103, 0.9) 100%);
+
+  }
+
+  &-graphic-2 {
+    position: absolute;
+    top: -100px;
+    right: 80px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(49, 207, 171, 0.5)), to(#50E3C2));
+    background-image: linear-gradient(-90deg, rgba(49, 207, 171, 0.5) 0%, #50E3C2 100%);
+  }
+
+  &-slider-items {
+    li {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in;
+    }
+
+    li.uk-active {
+      max-height: 500px;
+    }
+  }
+
+
+  &-section-point {
+    border-left: 1px solid $global-border;
+    height: 35px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &.right {
+      border-left: 0;
+      text-align: right;
+      border-right: 1px solid $global-border;
+    }
+
+    &.center {
+      text-align: center;
+      border: 0;
+    }
+
+    span {
+      letter-spacing: -1px;
+    }
+
+    &-wrapper {
+      z-index: 2;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      font-weight: 700;
+      color: rgba($color-black, 0.3);
+    }
+  }
+
+  &-btn {
+    text-transform: none;
+    font-weight: 700;
+    border-radius: 3px;
+    min-width: 180px;
+
+    &-rounded {
+      border-radius: 30px;
+    }
+  }
+
+  &-overlay-primary{
+    background-color: rgba(darken($color-primary, 90),  0.4);
+  }
+
+  &-work-filter {
+    a {
+      text-transform: none;
+    }
+  }
+
+  &-nav-left {
+    &::before {
+      border: 0;
+    }
+
+    li {
+      border-radius: 4px;
+    }
+
+    a {
+      text-transform: none;
+      font-weight: 700;
+      border: 0 !important;
+      color: $color-black;
+      padding-left: 0;
+
+      span {
+        width: 0;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    .uk-active {
+
+      position: relative;
+
+      a {
+        color: $color-primary;
+      }
+
+      span {
+        width: 30px;
+      }
+    }
+  }
+
+  &-margin-top {
+    &-1 {
+      margin-top: 30px;
+    }
+
+    &-2 {
+      margin-top: 60px;
+    }
+  }
+
+
+  &-margin-bottom {
+    &-1 {
+      margin-bottom: 30px;
+    }
+
+    &-2 {
+      margin-bottom: 60px;
+    }
+  }
+
+  &-bg-soft {
+    background-color: rgba($global-border, 0.5);
+  }
+
+  &-bg-inverse {
+    background-color: $color-inverse;
+  }
+
+  &-paggination {
+    font-size: 13px;
+    .uk-active {
+      &>a {
+        background: $color-primary;
+        color: $color-white;
+        padding: 0 8px;
+        border-radius: 3px;
+      }
+    }
+  } 
+  &-width{
+    &-1{
+      width: 80px;
+    }
+  } 
+
+  &-dark-skin {
+    .#{$px} {
+      &-border {
+        &-top {
+          border-top: 1px solid $inverse-global-border;
+        }
+
+        &-bottom {
+          border-bottom: 1px solid $inverse-global-border;
+        }
+      }
+
+      &-bg-soft {
+        background-color: rgba($inverse-global-border, 0.02);
+      }
+
+
+      &-section-point {
+        border-left: 1px solid $inverse-global-border;
+
+        &.right {
+          border-left: 0;
+          border-right: 1px solid $inverse-global-border;
+        }
+
+        &-wrapper {
+          color: rgba($color-white, 0.3);
+        }
+      }
+
+
+
+    }
+
+    .uk-modal-dialog,
+    .uk-modal-close-full {
+      background-color: $color-inverse;
+    }
+
+
+
+    .uk-alert {
+      background: #101e2c;
+    }
+
+    .uk-form-danger {
+      border-color: $color-red !important;
+    }
+
+
+  }
+
+}

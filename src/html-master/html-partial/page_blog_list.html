@@ -1,0 +1,58 @@
+ <section> 
+    <div class="@@px-section-point-wrapper">
+        <div class="uk-container">
+          <div class="@@px-section-point"> 
+            <span>Blog</span>
+          </div>
+        </div>
+      </div>
+   <div class="uk-container">
+     <div data-uk-grid class="uk-grid-divider">
+       <div class="uk-width-3-4@m @@px-section-padding"> 
+         <h1 class="@@px-section-title uk-heading-line"><span>Latest Articles</span></h1> 
+         <div data-uk-grid class="uk-grid-medium uk-child-width-1-2@s uk-margin-medium-top">
+           <div class="uk-width-1-1">
+             @@include("_part/blog_item.html",{"m" : "01.jpg", "mode": "@@mode"})
+           </div>
+           <div>
+             @@include("_part/blog_item.html",{"m" : "02.jpg", "mode": "@@mode"})
+           </div>
+           <div>
+             @@include("_part/blog_item.html",{"m" : "03.jpg", "mode": "@@mode"})
+           </div>
+           <div>
+             @@include("_part/blog_item.html",{"m" : "04.jpg", "mode": "@@mode"})
+           </div>
+           <div>
+             @@include("_part/blog_item.html",{"m" : "05.jpg", "mode": "@@mode"})
+           </div>
+           <div>
+             @@include("_part/blog_item.html",{"m" : "05.jpg", "mode": "@@mode"})
+           </div>
+           <div>
+             @@include("_part/blog_item.html",{"m" : "03.jpg", "mode": "@@mode"})
+           </div> 
+         </div> 
+         <div class="uk-margin-bottom uk-margin-large-top">
+           <ul class="@@px-paggination uk-pagination uk-flex-center">
+             <li>
+               <a href="#"><span data-uk-pagination-previous></span></a>
+             </li>
+             <li class="uk-active"><a href="#">1</a></li>
+             <li><a href="#">2</a></li>
+             <li><a href="#">3</a></li>
+             <li><a href="#">4</a></li>
+             <li class="uk-disabled"><span>. . .</span></li>
+             <li><a href="#">24</a></li>
+             <li>
+               <a href="#"><span data-uk-pagination-next></span></a>
+             </li>
+           </ul>
+         </div> 
+       </div>
+       <div class="uk-width-1-4@m @@px-section-padding">
+         @@include("_part/blog_sidebar.html") 
+       </div>
+     </div>
+   </div>
+ </section>

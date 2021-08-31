@@ -1,0 +1,70 @@
+<section>
+  <div class="@@px-section-point-wrapper">
+    <div class="uk-container">
+      <div class="@@px-section-point">
+        <span>Blog</span>
+      </div>
+    </div>
+  </div>
+  <div class="uk-container">
+    <div data-uk-grid class="uk-grid-divider">
+      <div class="uk-width-3-4@m @@px-section-padding">
+        <h1 class="@@px-section-title">
+          This Week’s Top Stories About Holidays
+        </h1>
+        <div class="@@px-blog-item-meta uk-margin-bottom uk-text-muted">
+          <div>
+            <span>May 7, 2019</span>
+          </div>
+          <div>
+            <span>in, LiveStyle</span>
+          </div>
+          <div><span data-uk-icon="comment"></span> 120</div>
+          <div><span data-uk-icon="heart"></span> 89</div>
+        </div>
+        <div>
+          <img src="src/img/blog/01.jpg" alt="" class="@@px-img-featured " />
+        </div>
+        <div class="uk-position-relative">
+          <div class="@@px-blog-content @@px-margin-bottom-2">
+            @@include("_part/blog_content.html")
+          </div>
+          <div class="@@px-blog-share">
+            <div class="uk-margin-bottom uk-text-muted @@px-text-small">Share</div>
+            <div>
+              <a href="#" class="uk-icon-button" data-uk-icon="twitter"></a>
+            </div>
+            <div> 
+              <a href="#" class="uk-icon-button" data-uk-icon="facebook"></a> 
+            </div>
+            <div>
+              <a href="#" class="uk-icon-button" data-uk-icon="pinterest"></a>
+            </div> 
+          </div>
+        </div>
+        <div class="@@px-margin-bottom-2">
+          @@include("_part/blog_comments.html")
+        </div>
+        <div class="@@px-margin-bottom-2">
+          @@include("_part/blog_form_comment.html")
+        </div> 
+        <div class="@@px-margin-bottom-2">
+          <h3 class="uk-heading-line @@px-section-title">
+            <span>Next Read</span>
+          </h3>
+          <div data-uk-grid class="uk-grid-medium uk-child-width-1-2@s ">
+            <div>
+              @@include("_part/blog_item.html",{"m" : "02.jpg", "mode": "@@mode"})
+            </div>
+            <div>
+              @@include("_part/blog_item.html",{"m" : "03.jpg", "mode": "@@mode"})
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="uk-width-1-4@m @@px-section-padding">
+        @@include("_part/blog_sidebar.html")
+      </div>
+    </div>
+  </div>
+</section>

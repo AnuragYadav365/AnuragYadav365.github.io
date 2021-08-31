@@ -1,0 +1,85 @@
+.#{$px} {
+  &-resume-list{
+    &>.uk-list{
+      padding-left: 0;
+      margin-bottom: 60px;
+    }
+  }
+  &-resume-item{
+    position: relative;
+    padding: 30px 30px 0 40px; 
+    h4{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      transition: 0.3s;
+    }
+    &:hover{
+      h4{
+        color: $color-primary;
+      } 
+    }
+    &-date{
+      
+      position: absolute;
+    
+      left: 0;
+      top: 0;
+      white-space: nowrap;
+      
+      &-icon{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding-top: 2px;
+        border-radius: 50%;
+        background: $color-primary;
+        color: $color-white;
+         float: left;
+      }
+      &-text{
+        float: left;
+        padding-top: 3px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &-resume-skill-item{
+    .uk-progress{
+      margin-bottom: 0;
+      height: 5px;
+    }
+  }
+
+  &-box-circle{ 
+    width: 100px;
+    margin: 6px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+    strong {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      line-height: 40px;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+    &:hover{
+      strong{
+        color: $color-primary;
+      }
+    }
+    
+    &-title{
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+  }
+}

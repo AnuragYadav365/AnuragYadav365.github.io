@@ -1,0 +1,52 @@
+.#{$px} {
+
+  &-landing{
+    &-left{
+     position: relative;
+     padding-right: 40px;
+     background: $color-white;
+     border-radius: 0;
+     @media (max-width: $breakpoint-xsmall-max) {
+      padding-right: 0;
+      border-radius: 0 ;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1800px;
+        left: 100%;
+        top: 0;
+        background: $color-white;
+      }
+
+     }
+     &::before {
+       content: "";
+       position: absolute;
+       height: 100%;
+       width: 1800px;
+       right: 100%;
+       top: 0;
+       background: $color-white; 
+         
+     }
+    }
+    &-right{
+     position: relative;
+     padding-left: 40px;
+     @media (max-width: $breakpoint-xsmall-max) {
+      padding-left: 0;
+     }
+    }
+    &-preview{
+      border-radius: 0;
+      overflow: hidden;
+      transition: 0.3s;
+      background: $color-black;
+      &:hover{
+        transform: scale(0.95);
+      }
+    }
+  }
+
+}

@@ -1,0 +1,74 @@
+<!-- main header -->
+<header class="@@px-main-header" id="main-header">
+  @@if(ishome == 'yes'){
+    <!-- home section -->
+    <div class="@@px-full-height " id="home">
+      @@if(video != ""){
+        @@include('section_video_home.html', {"video" : "@@video"})
+      }
+      @@if(slide == "yes"){
+        @@include('section_slide_home.html')
+      }
+      @@if(video == "" && slide == "no"){
+        @@include('section_home.html')
+      }
+    </div><!-- end home section -->
+  }
+  <!-- main menu -->
+  <nav class="@@px-main-menu " id="main-menu">
+    <div class="uk-container" data-uk-navbar>
+      <div class="uk-navbar-left">
+        <a class="@@px-logo uk-navbar-item uk-logo" href="@@mode-index.html"><span>Freda</span></a>
+      </div>
+      <div class="uk-navbar-right uk-hidden@m">
+        <a class="uk-navbar-toggle" href="#" id="btn-menu-toggle">
+          <span data-uk-navbar-toggle-icon class="@@px-icon-menu"></span>
+          <span data-uk-icon="close" class="@@px-icon-close"></span>
+        </a>
+      </div>
+      <div class="@@px-menu-toggle-wrapper" id="menucollapse">
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav"   @@if(ishome == 'yes'){ data-uk-scrollspy-nav="closest: li; scroll: false; offset: 79 " }>
+            <li>
+              <a class="@@px-inner-link" href="@@if(ishome != 'yes'){@@mode-index.html}#home" > Home </a>
+            </li>
+            <li>
+              <a class="@@px-inner-link" href="@@if(ishome != 'yes'){@@mode-index.html}#about"> About</a>
+            </li> 
+            <li>
+              <a class="@@px-inner-link" href="@@if(ishome != 'yes'){@@mode-index.html}#resume"> Resume </a>
+            </li>
+            <li>
+              <a class="@@px-inner-link" href="@@if(ishome != 'yes'){@@mode-index.html}#portfolio"> Portfolio </a>
+            </li>
+            <li @@if(ishome != 'yes'){class="uk-active"}>
+              <a class="@@px-inner-link" href="@@if(ishome != 'yes'){@@mode-blog-list.html}@@if(ishome == 'yes'){#blog}"> Blog </a>
+            </li>
+            <li>
+              <a class="@@px-inner-link" href="@@if(ishome != 'yes'){@@mode-index.html}#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav @@px-social-icons">
+            <li>
+              <a href="#">
+                <span class="uk-icon " data-uk-icon="icon: facebook"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="uk-icon" data-uk-icon="icon: instagram"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="uk-icon" data-uk-icon="icon: twitter"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav><!-- end main menu -->
+</header><!-- end main header -->

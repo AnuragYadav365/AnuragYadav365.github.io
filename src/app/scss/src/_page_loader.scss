@@ -1,0 +1,24 @@
+.#{$px} {
+  &-pageloader-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0; 
+    font-weight: 700;
+    z-index: 10000;
+    background-color: $bg-page-loader;
+
+    &.page-is-loaded {
+      display: none;
+    }
+  }
+
+  &-dark-skin {
+    .#{$px} {
+      &-pageloader-wrapper {
+        background: $color-inverse;
+      } 
+    }
+  }
+}

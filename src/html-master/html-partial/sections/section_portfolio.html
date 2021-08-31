@@ -1,0 +1,298 @@
+<!-- portfolio section -->
+<section class="@@px-section  uk-overflow-hidden" id="portfolio">
+  <div class="@@px-section-point-wrapper">
+    <div class="uk-container">
+      <div class="@@px-section-point">
+        <sup>04</sup>
+        <span>Portfolio</span>
+      </div>
+    </div>
+  </div>
+  <div class="uk-container ">
+    <div data-uk-grid class="uk-grid-divider">
+      <div class="uk-width-1-4@s uk-visible@s uk-margin-large-bottom @@px-section-padding-top"
+        id="portfolio-nav-wrapper">
+        <div data-uk-sticky="bottom: #portfolio-nav-wrapper; offset: 100; media: 650">
+          <ul class="@@px-nav-left uk-tab-left uk-tab" data-uk-scrollspy-nav="closest: li; scroll: false; offset: 120">
+            <li class="uk-active">
+              <a href="#myworks" class="@@px-inner-link" data-offset="120">
+                <span data-uk-icon="minus"></span>
+                My Works
+              </a>
+            </li>
+            <li>
+              <a href="#pricing" class="@@px-inner-link" data-offset="120">
+                <span data-uk-icon="minus"></span>
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="#testi" class="@@px-inner-link" data-offset="120">
+                <span data-uk-icon="minus"></span>
+                Testimonial
+              </a>
+            </li>
+            <li>
+              <a href="#client" class="@@px-inner-link" data-offset="120">
+                <span data-uk-icon="minus"></span>
+                Clients
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="uk-width-expand@s @@px-section-padding-top">
+        <div>
+          <h2 class="@@px-section-title uk-heading-line " id="myworks"><span>My Works</span></h2>
+          <div data-uk-filter="target: .js-filter" class="@@px-margin-top-1 @@px-margin-bottom-1">
+            <ul class="@@px-nav-filter uk-subnav uk-subnav-pill ">
+              <li><a data-uk-filter-control>All</a></li>
+              <li><a data-uk-filter-control=".data-web">Web</a></li>
+              <li><a data-uk-filter-control=".data-brand">Brand</a></li>
+              <li><a data-uk-filter-control=".data-design">Design</a></li>
+            </ul>
+            <ul class="js-filter uk-child-width-1-2  uk-grid-small  " data-uk-grid
+              data-uk-lightbox="animation: fade;  toggle: .@@px-lightbox">
+              <li class="data-web ">
+                @@include("../_part/work_item.html", {"d": "Web", "m" : "01"})
+              </li>
+              <li class="data-brand data-web">
+                @@include("../_part/work_item.html", {"d": "Brand, Web", "m" : "02"})
+              </li>
+              <li class="data-web">
+                @@include("../_part/work_item.html", {"d": "Web", "m" : "03"})
+              </li>
+              <li class="data-web data-design">
+                @@include("../_part/work_item.html", {"d": "Web, Design", "m" : "04"})
+              </li>
+              <li class="data-design">
+                @@include("../_part/work_item.html", {"d": "Design", "m" : "05"})
+              </li>
+              <li class="data-design">
+                @@include("../_part/work_item.html", {"d": "Design","m" : "06"})
+              </li>
+              <li class="data-brand">
+                @@include("../_part/work_item.html", {"d": "Brand","m" : "07"})
+              </li>
+              <li class="data-design">
+                @@include("../_part/work_item.html", {"d": "Design","m" : "08"})
+              </li>
+              <li class="data-brand">
+                @@include("../_part/work_item.html", {"d": "Brand","m" : "09"})
+              </li>
+              <li class="data-web">
+                @@include("../_part/work_item.html", {"d": "Web","m" : "10"})
+              </li>
+            </ul>
+            <div id="show-portofolio-details" class="uk-modal-full" data-uk-modal>
+              <div class="uk-modal-dialog ">
+                <button class="uk-modal-close-full uk-close-large" type="button" data-uk-close></button>
+                <div id="portofolio-details" data-uk-height-viewport class="uk-animation-toggle uk-overflow-hidden">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pricing">
+          <h2 class="@@px-section-title uk-heading-line "><span>Pricing</span></h2>
+          <div class="@@px-margin-top-1 @@px-margin-bottom-2">
+            <div data-uk-grid class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-1 uk-grid-medium">
+              <div>
+                <div class="@@px-pricing-item">
+                  <div class="uk-card">
+                    <div class="uk-card-header">
+                      <h4>Front-End Developer</h4>
+                      <div class="@@px-pricing-item-price">
+                        <strong>$ 40</strong>
+                        <span>/h</span>
+                      </div>
+                    </div>
+                    <div class="uk-card-body">
+                      <small class="uk-text-muted">Details:</small>
+                      <ul class="uk-list  uk-list-divider uk-text-small">
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          HTML5
+                        </li>
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          CSS3
+                        </li>
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          Angular jS
+                        </li>
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          Vue jS
+                        </li>
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          React jS
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="@@px-pricing-item">
+                  <div class="uk-card">
+                    <div class="uk-card-header">
+                      <h4>Back-End Developer</h4>
+                      <div class="@@px-pricing-item-price">
+                        <strong>$ 60</strong>
+                        <span>/h</span>
+                      </div>
+                    </div>
+                    <div class="uk-card-body">
+                      <small class="uk-text-muted">Details:</small>
+                      <ul class="uk-list  uk-list-divider uk-text-small">
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          Ruby on Rails
+                        </li>
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          Laravel
+                        </li>
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          Go
+                        </li>
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          Node Js
+                        </li>
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          Phoenix Elixir
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="@@px-pricing-item">
+                  <div class="uk-card">
+                    <div class="uk-card-header">
+                      <h4>Full-Stact Developer</h4>
+                      <div class="@@px-pricing-item-price">
+                        <strong>$ 80</strong>
+                        <span>/h</span>
+                      </div>
+                    </div>
+                    <div class="uk-card-body">
+                      <small class="uk-text-muted">Details:</small>
+                      <ul class="uk-list  uk-list-divider uk-text-small">
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          <strong>Included</strong> Front-End Developer
+                        </li>
+                        <li>
+                          <span class="uk-float-right uk-text-muted" data-uk-icon="check"></span>
+                          <strong>Included</strong> Back-End Developer
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="@@px-section-title uk-heading-line " id="testi"><span>Testimonial</span></h2>
+          <div data-uk-slider> 
+            <div class="@@px-margin-top-1 @@px-margin-bottom-2">
+              <div data-uk-grid class="uk-grid-small">
+                <div class="uk-width-expand">
+                  <div class="uk-slider-container">
+                    <ul class="@@px-slider-items uk-slider-items uk-child-width-1-1">
+                      <li>
+                        @@include("../_part/testi_item.html",{ "m" : "01.jpg", "t1" : "Nice Design"})
+                      </li>
+                      <li>
+                        @@include("../_part/testi_item.html",{ "m" : "02.jpg", "t1" : "Top Expectation"})
+                      </li>
+                      <li>
+                        @@include("../_part/testi_item.html", { "m" : "03.jpg", "t1" : "Wonderfull Work"})
+                      </li>
+                    </ul>
+                  </div>   
+                </div>
+                <div class="uk-width-auto">
+                  <div class="@@px-testi-nav">
+                    <a href="#" data-uk-slider-item="next">
+                      <span data-uk-icon="arrow-right"></span>
+                    </a>
+                    <a href="#" data-uk-slider-item="previous">
+                      <span data-uk-icon="arrow-left"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div>
+          <h2 class="@@px-section-title uk-heading-line " id="client"><span>Clients</span></h2>
+          <div class="@@px-margin-top-1 @@px-margin-bottom-2">
+            <div data-uk-grid class="uk-child-width-1-6@m uk-child-width-1-3">
+              <div>
+                @@include("../_part/client_item.html", {"m" : "01.png"})
+              </div>
+              <div>
+                @@include("../_part/client_item.html", {"m" : "02.png"})
+              </div>
+              <div>
+                @@include("../_part/client_item.html", {"m" : "03.png"})
+              </div>
+              <div>
+                @@include("../_part/client_item.html", {"m" : "04.png"})
+              </div>
+              <div>
+                @@include("../_part/client_item.html", {"m" : "05.png"})
+              </div>
+              <div>
+                @@include("../_part/client_item.html", {"m" : "06.png"})
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="@@px-border-top @@px-border-bottom">
+    <div class="uk-container">
+      <div data-uk-grid class="@@px-box-services uk-child-width-1-4@l uk-child-width-1-2 uk-text-center uk-grid-divider">
+        <div>
+          <div class="@@px-box-fact">
+            <div class="@@px-box-fact-count uk-h3">4441</div>
+            <span class="@@px-box-fact-desc ">Jobs Done</span>
+          </div>
+        </div>
+        <div>
+          <div class="@@px-box-fact">
+            <div class="@@px-box-fact-count uk-h3">100%</div>
+            <span class="@@px-box-fact-desc">Recommended</span>
+          </div>
+        </div>
+        <div>
+          <div class="@@px-box-fact">
+            <div class="@@px-box-fact-count uk-h3">673</div>
+            <span class="@@px-box-fact-desc">Repeat Clients</span>
+          </div>
+        </div>
+        <div>
+          <div class="@@px-box-fact">
+            <div class="@@px-box-fact-count uk-h3">99%</div>
+            <span class="@@px-box-fact-desc">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- end portfolio section -->

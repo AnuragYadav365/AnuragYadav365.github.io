@@ -1,0 +1,38 @@
+.#{$px} {
+  &-main-content {
+    position: relative;
+    z-index: 10;
+    background: $color-white;
+    min-height: 650px;
+  }
+
+  
+  &-section{
+    position: relative;
+    &-padding{
+     padding-top: 80px;
+     padding-bottom: 80px;
+     &-top{
+       padding-top: 80px;
+     }
+     &-bottom{
+       padding-bottom: 80px;
+     }
+    }
+    &-title{
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+   }
+
+
+   &-dark-skin{
+    background: $color-inverse;
+    .#{$px} {
+      &-main-content {
+        background: $color-inverse;
+      }
+    }
+   } 
+
+}

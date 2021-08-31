@@ -1,0 +1,19 @@
+.#{$px} {  
+  &-contact-left{
+    @media (max-width: $breakpoint-small-max) {
+      padding-bottom: 0;
+    }
+  }
+
+  &-contact-right{
+    @media (max-width: $breakpoint-small-max) {
+      padding-top: 0;
+    }
+  }
+
+  &-contact-mini{
+    .uk-icon{
+      width: 40px;
+    }
+  }
+}

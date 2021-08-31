@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include('_head_doc.html')
+</head>
+
+<body id="body-app" >
+  @@include('sections/page_loader.html')
+  <div class="uk-panel doc-sidebar uk-light">
+    <a href="#">
+      <img src="../src/img/doc/author.png" class="uk-width-1-1 uk-border-rounded" alt="">
+    </a>
+    <hr class="uk-divider-icon">
+    <ul class="uk-nav uk-nav-default  uk-text-bold uk-text-center" uk-scrollspy-nav="closest: li; scroll: true">
+      <li class="uk-active"><a href="#start">Start</a></li>
+      <li><a href="#structure">Structure</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#js">JS</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#credit">Credits</a></li>
+      <li class="uk-margin-top"><hr class="uk-divider-vertical"></li>
+      <li><a href="#thankyou">Thank You</a></li>
+    </ul>
+  </div>
+
+  <div class="uk-panel doc-main">
+    @@include("doc/start.html")
+    @@include("doc/structure.html")
+    @@include("doc/css.html")
+    @@include("doc/js.html")
+    @@include("doc/contact.html")
+    @@include("doc/credit.html")
+    @@include("doc/thank.html")
+  </div>
+
+  @@include('_js_doc.html')
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include('_head.html')
+</head>
+
+<body id="body-app" class="@@mode">
+  @@include('sections/page_loader.html')
+  <header class="@@px-section-padding @@px-dark-skin uk-light @@px-main-header">
+    <div class="@@px-graphics">
+      <div class="@@px-graphic-1" data-uk-parallax="blur: 0,30;"></div>
+      <div class="@@px-graphic-2" data-uk-parallax="blur: 0,30;"></div>
+    </div>
+    <div class="uk-container uk-text-center uk-position-relative">
+      <div>
+        <h1 class="uk-text-bold">
+          @@template_name
+        </h1>
+      </div>
+      <h4 class="uk-text-bold uk-text-muted uk-margin-remove-top uk-heading-line">
+        <span>@@template_desc</span>
+      </h4>
+      <p>v 2.0</p>
+    </div>
+  </header>
+  <!-- main section -->
+  <main class="@@px-main-content @@px-bg-inverse">
+    @@include("@@page")
+  </main>
+  <!-- end main section -->
+  @@include('sections/main_footer.html') @@include('_js.html')
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include('_head.html')
+</head>
+
+<body id="body-app" @@if(mode == 'dark'){class="@@px-dark-skin uk-light"}>
+  @@include('sections/page_loader.html')
+  @@include('sections/main_menu.html', {"ishome" : "@@ishome", "mode": "@@mode", "video" : "@@video", "slide": "@@slide"})
+  <!-- main section -->
+  <main class="@@px-main-content"> 
+    @@include("@@page", {"mode": "@@mode"})
+  </main>  <!-- end main section -->
+  @@include('sections/main_footer.html')
+
+  @@include('_js.html')
+</body>
+
+</html>
