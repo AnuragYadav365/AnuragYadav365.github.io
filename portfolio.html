@@ -148,13 +148,13 @@
                 <div class="yb-my-profile-desc-top">
                   <h2 class="yb-section-title">Hello There!</h2>
                   <p>
-                    I discovered my passion for programming and development when I was a 
+                    Hey, I am a teenager(age 17), I discovered my passion for programming and development when I was a 
                     sophomore in High School; It was then when it became clear what I wanted to
                     do for a living. I am pursuing my career at the amazing Chandigarh
                     University where I started my major in Computer Science(Bacherlor of engineering).
                     <br>
                     <br>
-                    I took a begginer’s classes, where I discovered the love for
+                    I took some begginer’s classes, where I discovered the love for
                     code. After that, I am focused on the coding part
                     and started the never-ending journey of becoming a developer along with sharpening my eye for design.
                   </p>
@@ -201,7 +201,7 @@
             <div>
               <div class="yb-box-service">
                 <span class="uk-icon" data-uk-icon="icon: code; ratio: 1.5"></span>
-                <h5>Programmer</h5>
+                <h5>Coder</h5>
               </div>
             </div>
             <div>
@@ -323,7 +323,7 @@
                         <div class="yb-resume-item-date-text"><span>December - 2020</span></div>
                       </div>
                       <h4 class="yb-section-title">Contributor</h4>
-                      <strong>Winter of Code 2020</strong>s
+                      <strong>Winter of Code 2020</strong>
                       <div class="uk-text-small">
                         <p>It was overwhelming to be a part of DSC NSEC project - DSC NSEC Algorithms for Winter of Code 2020.
                           This was my first introduction to Git and Github. How github is used by most of the programmers in order to
@@ -715,8 +715,6 @@
                         <div class="uk-card-header">
                           <h4>Front-End Developer</h4>
                           <div class="yb-pricing-item-price">
-                            <strong>$ 40</strong>
-                            <span>/h</span>
                           </div>
                         </div>
                         <div class="uk-card-body">
@@ -753,8 +751,6 @@
                         <div class="uk-card-header">
                           <h4>Back-End Developer</h4>
                           <div class="yb-pricing-item-price">
-                            <strong>$ 60</strong>
-                            <span>/h</span>
                           </div>
                         </div>
                         <div class="uk-card-body">
@@ -791,8 +787,6 @@
                         <div class="uk-card-header">
                           <h4>Full-Stact Developer</h4>
                           <div class="yb-pricing-item-price">
-                            <strong>$ 80</strong>
-                            <span>/h</span>
                           </div>
                         </div>
                         <div class="uk-card-body">
@@ -939,6 +933,98 @@
         </div>
       </div>
     </section><!-- end portfolio section -->
+    <!-- contact section -->
+    <section class="yb-section yb-border-top" id="contact">
+      <div class="yb-section-point-wrapper">
+        <div class="uk-container">
+          <div class="yb-section-point ">
+            <sup>06</sup>
+            <span>Contact</span>
+          </div>
+        </div>
+      </div>
+      <div class="uk-container">
+        <div data-uk-grid class=" uk-grid-divider">
+          <div class="yb-section-padding yb-contact-left uk-width-3-4@m">
+            <div>
+              <h2 class="yb-section-title uk-heading-line ">
+                <span>Get in touch</span>
+              </h2>
+              <p class="uk-text-bold">Feel free to contact me</p>
+              <div id="contact-form-alert"></div>
+              <form id="contact-form" class="uk-form-stacked">
+                <div class="uk-grid uk-grid-small uk-child-width-1-2@s">
+                  <div>
+                    <div class="uk-margin">
+                      <label for="f_email" class="uk-form-label">Email*</label>
+                      <div class="uk-form-controls uk-inline uk-width-1-1">
+                        <span class="uk-form-icon" data-uk-icon="icon: user"></span>
+                        <input class="yb-input uk-input  uk-border-rounded" type="email" name="f_email" id="f_email" placeholder=" Your email here . . ." />
+                      </div>
+                      <small class="uk-text-danger err-msg" id="f_email_error"></small>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-margin">
+                      <label for="f_phone" class="uk-form-label">Phone*</label>
+                      <div class="uk-form-controls uk-inline uk-width-1-1">
+                        <span class="uk-form-icon" data-uk-icon="icon: phone"></span>
+                        <input class="yb-input uk-input uk-border-rounded" type="text" name="f_phone" id="f_phone" placeholder=" Your phone here . . ." />
+                      </div>
+                      <small class="uk-text-danger err-msg" id="f_phone_error"></small>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-margin">
+                  <label class="uk-form-label">Subject*</label>
+                  <div class="uk-form-controls uk-grid-small uk-child-width-auto uk-grid">
+                    <label><input class="uk-radio" type="radio" name="f_subject" value="General" checked />
+                      General(Random Chat)</label>
+                    <label><input class="uk-radio" type="radio" name="f_subject" value="Project Preview" /> Project
+                      Review</label>
+                    <label><input class="uk-radio" type="radio" name="f_subject" value="Hire Me" /> Hire
+                      Me</label>
+                  </div>
+                </div>
+                <div class="uk-margin ">
+                  <label for="f_message" class="uk-form-label">Message*</label>
+                  <div class="uk-form-controls">
+                    <textarea class="yb-input  uk-textarea uk-border-rounded" rows="7" name="f_message" id="f_message" placeholder="Your message here . . ."></textarea>
+                  </div>
+                  <small class="uk-text-danger err-msg" id="f_message_error"></small>
+                </div>
+                <div class="uk-margin-top">
+                  <button class="uk-button uk-button-primary uk-button-large  yb-btn" type="submit" id="btn-contact-form" data-textreset="Send Now">
+                    <span class="uk-margin-small-right btn-text-wrap">Send Now</span>
+                    <span data-uk-icon="arrow-right" class="uk-icon"> </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class=" uk-width-1-4@m yb-section-padding yb-contact-right">
+            <p class="uk-margin-medium-bottom uk-visible@m">
+              <img src="src/img/empty.png" data-src="src/img/profile3.jpeg" width="300" height="300" data-uk-img alt="" class="uk-border-circle" />
+            </p>
+            <ul class="uk-list uk-list-divider uk-text-small yb-contact-mini">
+              <li class="uk-flex uk-flex-middle">
+                <span data-uk-icon="mail" class="uk-flex-none uk-text-primary "></span>
+                <span>anuragyadavmnpgmail.com</span>
+              </li>
+              <li class="uk-flex uk-flex-middle">
+                <span data-uk-icon="phone" class="uk-flex-none uk-text-primary"></span>
+                <span> +91-88476-97633</span>
+              </li>
+              <li class="uk-flex uk-flex-middle">
+                <span data-uk-icon="location" class="uk-flex-none uk-text-primary "></span>
+                <span>Hallomajra, Chandigarh 160002, India</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact section -->
 
 
   </main> <!-- end main section -->
