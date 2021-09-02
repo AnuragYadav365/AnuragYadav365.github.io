@@ -1,7 +1,7 @@
 <?php
 
 //Change this to your email
-$to_myemail = 'test@email.com';
+$to_myemail = 'anuragyadavmnp@gmail.com';
 
 
 function my_set_error($json, $msg_desc, $field = null, $field_msg = null)
